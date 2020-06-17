@@ -2,7 +2,7 @@
 
 .juneteenth-modal {
   position: relative;
-	z-index: 1000;
+	z-index: 9999;
 }
 
 .juneteenth-modal__overlay {
