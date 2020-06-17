@@ -131,7 +131,7 @@ class Juneteenth_Public {
 								</defs>
 								<text x="0" y="15"><?php echo __('Juneteenth', 'juneteenth'); ?></text>
 							</svg>
-							<p style="text-align:center;"><a href="https://nmaahc.si.edu/blog-post/celebrating-juneteenth" target="_blank" rel="noopener" class="juneteenth__learn-more"><?php echo __('Learn More About This Day', 'juneteenth'); ?></a></p>
+							<p style="text-align:center;"><a href="https://sixnineteen.com/" target="_blank" rel="noopener" class="juneteenth__learn-more"><?php echo __('Learn More About This Day', 'juneteenth'); ?></a></p>
 							<svg class="juneteenth__subheading" viewBox="0 0 222 20">
 								<text x="0" y="15"><?php echo __('Black Lives Matter Everyday', 'juneteenth'); ?></text>
 							</svg>

@@ -68,7 +68,7 @@
   width: 42px;
   height: 42px;
   will-change: transform;
-  -webkit-transform .25s ease-out;
+  -webkit-transition: transform .25s ease-out;
   transition: transform .25s ease-out;
 }
 
