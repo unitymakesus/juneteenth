@@ -11,7 +11,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.75);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,10 +20,9 @@
 .juneteenth-modal__container {
   background: #020403;
 	font-family: 'Work Sans', sans-serif;
-  padding: 30px;
-  max-width: 992px;
-  width: 100%;
-  max-height: 100vh;
+  padding: 30px 30px 70px;
+  width: 90vw;
+  max-height: 90vh;
   overflow-y: auto;
   box-sizing: border-box;
 }
@@ -34,58 +33,79 @@
   align-items: center;
 }
 
-.juneteenth-modal__close {
-  background: transparent;
-  border: 0;
-}
-
-.juneteenth-modal__header .juneteenth-modal__close::before {
-  content: "\2715";
-}
-
 .juneteenth-modal__content {
   margin-top: 2rem;
   margin-bottom: 2rem;
   line-height: 1.5;
   color: white;
+  text-align: center;
 }
 
 .juneteenth-modal__close {
-  font-size: .875rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-  background-color: transparent;
-  color: white;
-  border-radius: .25rem;
-  border: 1px solid transparent;
-  cursor: pointer;
-  -webkit-appearance: button;
-  text-transform: none;
-  overflow: visible;
-  line-height: 1.15;
-  margin: 0;
+  background: #737679;
+  color: #020403;
+  border: 0;
+  border-radius: 100%;
+  font-size: 1.2rem;
+  width: 42px;
+  height: 42px;
   will-change: transform;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  transition: -webkit-transform .25s ease-out;
+  -webkit-transform .25s ease-out;
   transition: transform .25s ease-out;
-  transition: transform .25s ease-out,-webkit-transform .25s ease-out;
+}
+
+.juneteenth-modal__header .juneteenth-modal__close::before {
+  content: "\2715";
+  font-weight: 900;
 }
 
 .juneteenth-modal__close:focus, .juneteenth-modal__close:hover {
   -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
   transform: scale(1.05);
-  border-color: white;
-  background-color: transparent;
 }
 
-.juneteenth-modal__btn:hover {
-  cursor: pointer;
+svg[class*="juneteenth"] {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+svg[class*="juneteenth"] text {
+	width: 100%;
+  font-size: 16px;
+}
+
+.juneteenth__heading text {
+  fill: url(#filler);
+	font-weight: 900;
+}
+
+.juneteenth__subheading text {
+  fill: #737679;
+	font-weight: 500;
+}
+
+a.juneteenth__learn-more {
+  display: inline-block;
+  text-align: center;
+  background: #FEC601;
+  color: #020403;
+  font-weight: 500;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  will-change: transform;
+	transition: all 0.4s ease;
+	font-family: 'Work Sans', sans-serif;
+}
+
+.juneteenth__learn-more:hover, .juneteenth__learn-more:focus {
+  background: #FDD649;
+  color: #020403;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 @keyframes mmfadeIn {
@@ -135,52 +155,4 @@
 .micromodal-slide .juneteenth-modal__container,
 .micromodal-slide .juneteenth-modal__overlay {
   will-change: transform;
-}
-
-svg[class*="juneteenth"],
-svg[class*="juneteenth"] text {
-	width: 100%;
-	font-size: 16px;
-}
-
-.juneteenth__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.juneteenth__container {
-  width: 75%;
-}
-
-.juneteenth__heading {
-  fill: url(#filler);
-	font-weight: 900;
-	font-size: 1rem;
-}
-
-.juneteenth__subheading {
-  fill: #737679;
-	font-weight: 500;
-	font-size: 1rem;
-}
-
-a.juneteenth__learn-more {
-  display: inline-block;
-  text-align: center;
-  background: #FEC601;
-  color: #020403;
-  font-weight: 500;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 18px;
-	transition: all 0.4s ease;
-	font-family: 'Work Sans', sans-serif;
-}
-
-.juneteenth__learn-more:hover, .juneteenth__learn-more:focus {
-  background: #FDD649;
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
 }
