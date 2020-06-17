@@ -8,7 +8,7 @@
  * @wordpress-plugin
  * Plugin Name:       Juneteenth Splash Page
  * Plugin URI:        https://github.com/unitymakesus/juneteenth
- * Description:       Spread Juneteenth awareness with this splash page that automatically appears on your homepage on Juneteenth! (WCAG 2.1 AA compliant modal)
+ * Description:       Spread Juneteenth awareness with this splash page that automatically appears on your website on Juneteenth! (WCAG 2.1 AA compliant modal)
  * Version:           1.0.0
  * Author:            Unity Web Agency
  * Author URI:        https://unitywebagency.com/

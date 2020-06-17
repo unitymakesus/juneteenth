@@ -96,24 +96,21 @@ class Juneteenth_Public {
 		 * class.
 		 */
 
-		// Only show on the homepage.
-		if (is_front_page()) {
-			wp_enqueue_script( $this->juneteenth, plugin_dir_url( __FILE__ ) . 'js/juneteenth-public.js', array(), $this->version, false );
-		}
+		wp_enqueue_script( $this->juneteenth, plugin_dir_url( __FILE__ ) . 'js/juneteenth-public.js', array(), $this->version, false );
 
 	}
 
 	/**
-	 * Add modal markup to bottom of the homepage.
+	 * Add modal markup to bottom of the page.
 	 *
 	 * @since		 1.0.0
 	 */
 	public function its_juneteenth_div() {
 
-		// Only show on the homepage.
-		if (is_front_page()) {
-			ob_start();
-			?>
+		ob_start();
+		?>
+		<div class="juneteenth-wrapper">
+			<button class="juneteenth-btn" data-micromodal-trigger="juneteenth">Juneteenth</button>
 			<div class="juneteenth-modal micromodal-slide" id="juneteenth" aria-hidden="true">
 				<div class="juneteenth-modal__overlay" tabindex="-1" data-micromodal-close>
 					<div class="juneteenth-modal__container" role="dialog" aria-modal="true" aria-labelledby="juneteenth-title">
@@ -121,35 +118,31 @@ class Juneteenth_Public {
 							<button class="juneteenth-modal__close" aria-label="Close modal" data-micromodal-close></button>
 						</header>
 						<main class="juneteenth-modal__content" id="juneteenth-content">
-							<div class="juneteenth__wrapper">
-								<div class="juneteenth__container">
-									<svg class="juneteenth__heading" id="juneteenth-title" viewBox="0 0 93 18">
-										<defs>
-											<linearGradient id="filler" gradientTransform="rotate(-15)">
-												<stop stop-color="#A00320" offset="0%"></stop>
-												<stop stop-color="#A00320" offset="33%"></stop>
-												<stop stop-color="#FEC601" offset="40%"></stop>
-												<stop stop-color="#FEC601" offset="66%"></stop>
-												<stop stop-color="#579735" offset="70%"></stop>
-												<stop stop-color="#579735" offset="100%"></stop>
-											</linearGradient>
-										</defs>
-										<text x="0" y="15"><?php echo __('Juneteenth', 'juneteenth'); ?></text>
-									</svg>
-									<p style="text-align:center;"><a href="https://nmaahc.si.edu/blog-post/celebrating-juneteenth" target="_blank" rel="noopener" class="juneteenth__learn-more"><?php echo __('Learn More About This Day', 'juneteenth'); ?></a></p>
-									<svg class="juneteenth__subheading" viewBox="0 0 222 20">
-										<text x="0" y="15"><?php echo __('Black Lives Matter Everyday', 'juneteenth'); ?></text>
-									</svg>
-								</div>
-							</div>
+							<svg class="juneteenth__heading" id="juneteenth-title" viewBox="0 0 93 18">
+								<defs>
+									<linearGradient id="filler">
+										<stop stop-color="#A00320" offset="0%"></stop>
+										<stop stop-color="#A00320" offset="30%"></stop>
+										<stop stop-color="#FEC601" offset="35%"></stop>
+										<stop stop-color="#FEC601" offset="60%"></stop>
+										<stop stop-color="#579735" offset="65%"></stop>
+										<stop stop-color="#579735" offset="100%"></stop>
+									</linearGradient>
+								</defs>
+								<text x="0" y="15"><?php echo __('Juneteenth', 'juneteenth'); ?></text>
+							</svg>
+							<p style="text-align:center;"><a href="https://nmaahc.si.edu/blog-post/celebrating-juneteenth" target="_blank" rel="noopener" class="juneteenth__learn-more"><?php echo __('Learn More About This Day', 'juneteenth'); ?></a></p>
+							<svg class="juneteenth__subheading" viewBox="0 0 222 20">
+								<text x="0" y="15"><?php echo __('Black Lives Matter Everyday', 'juneteenth'); ?></text>
+							</svg>
 						</main>
 					</div>
 				</div>
 			</div>
-			<?php
-			$output = ob_get_clean();
-			echo $output;
-		}
+		</div>
+		<?php
+		$output = ob_get_clean();
+		echo $output;
 
 	}
 

@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;900&display=swap');
 
+.juneteenth-wrapper {
+  font-size: 16px;
+}
+
+.juneteenth-btn {
+  position: fixed;
+  width: 14em;
+  bottom: 2em;
+  right: -4em;
+  transform: rotate(-45deg);
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  background: #020403;
+  color: #c5ccd3;
+  border: 2px solid #c5ccd3;
+  z-index: 100;
+}
+
 .juneteenth-modal {
   position: relative;
 	z-index: 9999;
@@ -73,7 +91,6 @@ svg[class*="juneteenth"] {
 
 svg[class*="juneteenth"] text {
 	width: 100%;
-  font-size: 16px;
 }
 
 .juneteenth__heading text {
