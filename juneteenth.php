@@ -71,7 +71,7 @@ function run_juneteenth() {
 	 * Only run if current time (based on setting's configured Timezone)
 	 * is during Juneteenth.
 	 */
-	$juneteenth = '617'; //TODO: change to 619
+	$juneteenth = '619';
 	$current_time = current_time('nj', false);
 
 	if ($juneteenth == $current_time) {
