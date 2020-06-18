@@ -17,4 +17,4 @@ Spread Juneteenth awareness with this modal that automatically appears on your w
 
 ## Screenshots
 
-![image](https://user-images.githubusercontent.com/928176/85047430-d0202b00-b15f-11ea-96c7-6ecff27b6683.png)
+![image](https://user-images.githubusercontent.com/928176/85049342-8d138700-b162-11ea-9a00-9eb780c2f563.png)
