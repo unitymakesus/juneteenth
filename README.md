@@ -11,9 +11,12 @@ Spread Juneteenth awareness with this modal that automatically appears on your w
 
 ## Installation
 
-1. Upload `juneteenth-banner` to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. On 6.19, a Juneteenth modal will automagically appear on your website
+1. Download the Source Code (zip) from the [latest release](https://github.com/unitymakesus/juneteenth/releases/latest).
+2. On your website's admin area, navigate to Plugins > Add New.
+3. Instead of searching for a plugin, click on the "Upload Plugin" next to the page title.
+4. Upload the Source Code zip file you downloaded in step 1.
+3. Activate the plugin.
+4. On 6.19, a Juneteenth modal will automagically appear on your website.
 
 ## Screenshots
 
