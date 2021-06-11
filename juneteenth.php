@@ -8,7 +8,7 @@
  * @wordpress-plugin
  * Plugin Name:       Juneteenth Banner
  * Plugin URI:        https://github.com/unitymakesus/juneteenth
- * Description:       Spread Juneteenth awareness with this modal that automatically appears on your website on Juneteenth (WCAG 2.1 AA compliant). Links to https://sixnineteen.com/ for more information and to get involved.
+ * Description:       Spread Juneteenth awareness with this modal that automatically appears on your website on Juneteenth (WCAG 2.1 AA compliant).
  * Version:           1.0.1
  * Author:            Unity Web Agency
  * Author URI:        https://unitywebagency.com/

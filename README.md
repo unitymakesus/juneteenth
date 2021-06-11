@@ -7,7 +7,7 @@
 * License: GPLv2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Spread Juneteenth awareness with this modal that automatically appears on your website on Juneteenth (WCAG 2.1 AA compliant). Links to https://sixnineteen.com/ for more information and to get involved.
+Spread Juneteenth awareness with this modal that automatically appears on your website on Juneteenth (WCAG 2.1 AA compliant).
 
 ## Installation
 
